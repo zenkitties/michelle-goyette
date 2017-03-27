@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
+/*=== Variables ===*/
+/* === Layout === */
+* {
+  position: relative; }
+
+html {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw; }
+  html a {
+    text-decoration: none;
+    color: white;
+    transition: all 250ms ease; }
+  html a:hover, html a:focus {
+    color: #a8ebff;
+    text-decoration: none; }
+  html ul {
+    -webkit-padding-start: 0;
+    list-style-type: none; }
+
+body {
+  background: url(../img/michelle-goyette-background.jpg) center center no-repeat fixed;
+  background-size: cover;
+  font: 16px Raleway, sans-serif, Arial, Helvetica;
+  height: 100%; }
+  body .page-container {
+    height: 100%; }
+
+/* === Header === */
+header {
+  height: 44px;
+  background-color: #29cdff;
+  border-bottom: 1px solid #0fc7ff; }
+  header ul.navigation-menu {
+    display: block;
+    text-align: right;
+    text-transform: uppercase; }
+    header ul.navigation-menu li {
+      display: inline-block;
+      padding: 10px 10px; }
+  header .brand-logo {
+    padding: 10px; }
+
+/* === Footer ===*/
+footer {
+  position: absolute;
+  background-color: #0fc7ff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  text-align: center; }
+  footer ul {
+    display: block; }
+    footer ul li {
+      display: inline-block;
+      padding: 2px 10px; }
