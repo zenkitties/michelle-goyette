@@ -7,39 +7,69 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    <div class="page-container">
-        <header class="col-md-12">
-            <nav class="col-md-12">
-               <div class="col-md-6 brand-logo">
-                   <a href="http://michelle-goyette.com">Michelle Goyette.com</a>
-               </div>
-                <ul class="navigation-menu col-md-6">
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div class="main-content">
-            
-        </div>
-        
-        <footer>
-            <h4>&copy;Copyright Michelle Goyette | Site design by <a href="http://zenkitties.pw" target="_blank">Zen Kitties</a></h4>
-            <ul class="social-media">
-                <li><a href="#" target="_blank"><i class="fa fa-3x fa-facebook"></i></a></li>
-                <li><a href="#" target="_blank"><i class="fa fa-3x fa-instagram"></i></a></li>
-                <li><a href="#" target="_blank"><i class="fa fa-3x fa-twitter"></i></a></li>
+<body class="site" ng-app="michelleApp">
+    <header class="col-md-12">
+        <nav>
+            <div class="col-md-6 col-xs-12 brand-logo">
+                <a href="http://michelle-goyette.com">Michelle Goyette.com</a>
+            </div>
+            <ul class="navigation-menu col-md-6 col-xs-12">
+                <li><a ui-sref="home">home</a></li>
+                <li><a ui-sref="about">about</a></li>
+                <li><a id="open-contact">contact</a></li>
             </ul>
-        </footer>
+        </nav>
+    </header>
+    
+    <!--CONTACT FORM -->
+    <contact></contact>
+    
+    <div class="container">
+        <main class="main-content row">
+           <div class="updates col-md-8 col-xs-12" ui-view></div>
+           <aside class="pricing col-md-4 col-xs-12">
+                <h2>Pricing</h2>
+                <hr />
+                <ul>
+                    <li>One Person | $140</li>
+                    <li>Two People | $180</li>
+                    <li>Three People | $200</li>
+                    <li>Four People | $250</li>
+                    <li>Five + | $50/Person</li>
+                </ul>
+                <p>Sessions are 45 minutes typically. For large groups she can do an hour or more.</p>
+            </aside>
+        </main>
+        <div id="slider" class="testimonials col-md-12" ng-controller="testimonialController">
+          <i id="left-quote" class="fa fa-3x fa-quote-left"></i>
+           <div class="col-md-1"></div>
+           <div class="col-md-10 slide" ng-repeat="testimonial in testimonials">
+              <div class="slide-copy">
+                   <p ng-repeat="para in testimonial.comment">{{ para }}</p>
+                   <p class="client-name">~ {{testimonial.client}}</p>
+               </div><!--/.slide-copy-->
+           </div> <!--/.Slide -->
+           <div class="col-md-1"></div>
+           <i id="right-quote" class="fa fa-3x fa-quote-right"></i>
+        </div><!-- ./testimonials -->
     </div><!--/container-->
+    <footer>
+        <h4>&copy;Copyright Michelle Goyette | Site design by <a href="http://zenkitties.pw" target="_blank">Zen Kitties</a></h4>
+        <ul class="social-media">
+            <li><a href="#" target="_blank"><i class="fa fa-3x fa-facebook"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-3x fa-instagram"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-3x fa-twitter"></i></a></li>
+        </ul>
+    </footer>
     
     
     
-    <script src="js/jquery-3.2.0.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
     <script src="js/angular.min.js"></script>
     <script src="js/angular-ui-router.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="js/jquery-3.2.0.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="app/contact.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

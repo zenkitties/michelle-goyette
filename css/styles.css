@@ -6,9 +6,7 @@
 
 html {
   padding: 0;
-  margin: 0;
-  height: 100vh;
-  width: 100vw; }
+  margin: 0; }
   html a {
     text-decoration: none;
     color: white;
@@ -23,33 +21,134 @@ html {
 body {
   background: url(../img/michelle-goyette-background.jpg) center center no-repeat fixed;
   background-size: cover;
-  font: 16px Raleway, sans-serif, Arial, Helvetica;
-  height: 100%; }
-  body .page-container {
-    height: 100%; }
+  font: 16px Raleway, sans-serif, Arial, Helvetica; }
+
+body.site {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column; }
 
 /* === Header === */
 header {
-  height: 44px;
+  min-height: 100%;
   background-color: #29cdff;
   border-bottom: 1px solid #0fc7ff; }
   header ul.navigation-menu {
     display: block;
     text-align: right;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-bottom: 0; }
+    header ul.navigation-menu #open-contact:hover {
+      cursor: pointer; }
     header ul.navigation-menu li {
       display: inline-block;
       padding: 10px 10px; }
   header .brand-logo {
     padding: 10px; }
 
+/* === Main Content === */
+.main-content {
+  background-color: rgba(15, 199, 255, 0.4);
+  margin-top: 20px;
+  color: white; }
+
+.updates {
+  min-height: 400px;
+  border-right: 1px solid #0fc7ff;
+  -webkit-box-shadow: 4px 0px 17px 0px rgba(0, 0, 0, 0.27);
+  -moz-box-shadow: 4px 0px 17px 0px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 0px 17px 0px rgba(0, 0, 0, 0.27); }
+
+/* ==== About Me ====*/
+#about-box {
+  padding: 10px; }
+  #about-box #about-pic {
+    width: 100%;
+    border-radius: 47%; }
+
+/* ======= Testomonials ============*/
+div.testimonials {
+  background-color: rgba(15, 199, 255, 0.4);
+  color: white;
+  padding: 20px 0;
+  margin: 20px 0 100px 0; }
+  div.testimonials .client-name {
+    text-transform: uppercase; }
+  div.testimonials #left-quote {
+    position: absolute;
+    top: 20px;
+    left: 20px; }
+  div.testimonials #right-quote {
+    position: absolute;
+    top: 20px;
+    right: 20px; }
+
+div#slider {
+  height: 200px;
+  overflow: hidden; }
+
+/* === Aside === */
+.pricing {
+  height: 100%;
+  color: white;
+  text-align: center; }
+  .pricing li {
+    line-height: 1.5em; }
+
+/* === Contact Form Styles === */
+.contact-form {
+  padding: 15px;
+  position: absolute;
+  top: -560px;
+  z-index: 1000;
+  background-color: #29cdff;
+  border: 1px solid #0fc7ff;
+  -webkit-box-shadow: 10px 10px 11px -4px rgba(0, 0, 0, 0.29);
+  -moz-box-shadow: 10px 10px 11px -4px rgba(0, 0, 0, 0.29);
+  box-shadow: 10px 10px 11px -4px rgba(0, 0, 0, 0.29); }
+  .contact-form #contact-close {
+    float: right;
+    z-index: 1000;
+    color: red; }
+  .contact-form #contact-close:hover {
+    color: #cc0000;
+    cursor: pointer; }
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    background-color: #00a8db;
+    border: 1px solid black;
+    color: white; }
+  .contact-form textarea {
+    padding: 6px 12px;
+    border-radius: 4px; }
+  .contact-form input::focus {
+    border: 1px solid white; }
+  .contact-form ::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: white;
+    opacity: 0.7; }
+  .contact-form :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: white;
+    opacity: 0.7; }
+  .contact-form ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: white;
+    opacity: 0.7; }
+  .contact-form :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: white;
+    opacity: 0.7; }
+
 /* === Footer ===*/
 footer {
-  position: absolute;
-  background-color: #0fc7ff;
   bottom: 0;
-  left: 0;
   right: 0;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  background-color: #0fc7ff;
   padding: 1rem;
   text-align: center; }
   footer ul {
