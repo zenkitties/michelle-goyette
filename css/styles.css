@@ -12,7 +12,7 @@ html {
     color: #2e2e2e;
     transition: all 250ms ease; }
   html a:hover, html a:focus {
-    color: #a8ebff;
+    color: #6ecef7;
     text-decoration: none; }
   html ul {
     -webkit-padding-start: 0;
@@ -32,8 +32,8 @@ body.site {
 /* === Header === */
 header {
   min-height: 100%;
-  background-color: #29cdff;
-  border-bottom: 1px solid #0fc7ff; }
+  background-color: #0b9cda;
+  border-bottom: 1px solid #0a8bc2; }
   header ul.navigation-menu {
     display: block;
     text-align: right;
@@ -49,7 +49,7 @@ header {
 
 /* === Main Content === */
 .main-content {
-  background-color: rgba(15, 199, 255, 0.8);
+  background-color: rgba(10, 139, 194, 0.8);
   margin-top: 20px;
   color: #2e2e2e; }
   .main-content hr {
@@ -58,7 +58,7 @@ header {
 .updates {
   min-height: 400px;
   padding-bottom: 20px;
-  border-right: 1px solid #0fc7ff;
+  border-right: 1px solid #0a8bc2;
   -webkit-box-shadow: 4px 0px 17px 0px rgba(0, 0, 0, 0.27);
   -moz-box-shadow: 4px 0px 17px 0px rgba(0, 0, 0, 0.27);
   box-shadow: 4px 0px 17px 0px rgba(0, 0, 0, 0.27); }
@@ -91,7 +91,7 @@ header {
   border: 2px solid black;
   cursor: default; }
   .date:hover .month {
-    color: #29cdff; }
+    color: #0b9cda; }
   .date:hover .day {
     color: white; }
 
@@ -104,7 +104,7 @@ header {
 
 /* ======= Testomonials ============*/
 div.testimonials {
-  background-color: rgba(15, 199, 255, 0.8);
+  background-color: rgba(10, 139, 194, 0.8);
   color: #2e2e2e;
   padding: 20px 0;
   margin: 20px 0 100px 0; }
@@ -137,8 +137,8 @@ div#slider {
   position: absolute;
   top: -560px;
   z-index: 1000;
-  background-color: #29cdff;
-  border: 1px solid #0fc7ff;
+  background-color: #0b9cda;
+  border: 1px solid #0a8bc2;
   -webkit-box-shadow: 10px 10px 11px -4px rgba(0, 0, 0, 0.29);
   -moz-box-shadow: 10px 10px 11px -4px rgba(0, 0, 0, 0.29);
   box-shadow: 10px 10px 11px -4px rgba(0, 0, 0, 0.29); }
@@ -151,7 +151,7 @@ div#slider {
     cursor: pointer; }
   .contact-form input, .contact-form textarea {
     width: 100%;
-    background-color: #00a8db;
+    background-color: #086891;
     border: 1px solid black;
     color: white; }
   .contact-form textarea {
@@ -183,7 +183,7 @@ footer {
   align-items: center;
   justify-content: center;
   margin-top: auto;
-  background-color: #0fc7ff;
+  background-color: #0a8bc2;
   padding: 1rem;
   text-align: center; }
   footer ul {
