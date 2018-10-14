@@ -12,7 +12,7 @@ html {
     color: #2e2e2e;
     transition: all 250ms ease; }
   html a:hover, html a:focus {
-    color: #6ecef7;
+    color: #55c6f6;
     text-decoration: none; }
   html ul {
     -webkit-padding-start: 0;
@@ -29,11 +29,24 @@ body.site {
   display: flex;
   flex-direction: column; }
 
+div.page-headings {
+  margin-bottom: 20px;
+  padding-top: 10px;
+  height: 50px;
+  width: 100%;
+  background-color: #086891;
+  -webkit-box-shadow: 0px 7px 11px -1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 7px 11px -1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 7px 11px -1px rgba(0, 0, 0, 0.2); }
+  div.page-headings .h2 {
+    padding-top: 20px;
+    padding-left: 20px; }
+
 /* === Header === */
 header {
   min-height: 100%;
-  background-color: #0b9cda;
-  border-bottom: 1px solid #0a8bc2; }
+  background-color: #0a8bc2;
+  border-bottom: 1px solid #0979aa; }
   header ul.navigation-menu {
     display: block;
     text-align: right;
@@ -49,7 +62,7 @@ header {
 
 /* === Main Content === */
 .main-content {
-  background-color: rgba(10, 139, 194, 0.8);
+  background-color: rgba(9, 121, 170, 0.8);
   margin-top: 20px;
   color: #2e2e2e; }
   .main-content hr {
@@ -58,7 +71,7 @@ header {
 .updates {
   min-height: 400px;
   padding-bottom: 20px;
-  border-right: 1px solid #0a8bc2;
+  border-right: 1px solid #086891;
   -webkit-box-shadow: 4px 0px 17px 0px rgba(0, 0, 0, 0.27);
   -moz-box-shadow: 4px 0px 17px 0px rgba(0, 0, 0, 0.27);
   box-shadow: 4px 0px 17px 0px rgba(0, 0, 0, 0.27); }
@@ -69,6 +82,10 @@ header {
 .single-update .update-bullet-list {
   list-style-type: circle;
   padding-left: 55px; }
+
+.single-update img {
+  display: block;
+  margin: 10px auto 0 auto; }
 
 /* Dating Styles */
 .date {
@@ -91,20 +108,20 @@ header {
   border: 2px solid black;
   cursor: default; }
   .date:hover .month {
-    color: #0b9cda; }
+    color: #0a8bc2; }
   .date:hover .day {
     color: white; }
 
 /* ==== About Me ====*/
 #about-box {
-  padding: 10px; }
+  padding: 10px 10px 10px 10px; }
   #about-box #about-pic {
     width: 100%;
-    border-radius: 47%; }
+    border-radius: 48%; }
 
 /* ======= Testomonials ============*/
 div.testimonials {
-  background-color: rgba(10, 139, 194, 0.8);
+  background-color: rgba(9, 121, 170, 0.8);
   color: #2e2e2e;
   padding: 20px 0;
   margin: 20px 0 100px 0; }
@@ -137,8 +154,8 @@ div#slider {
   position: absolute;
   top: -560px;
   z-index: 1000;
-  background-color: #0b9cda;
-  border: 1px solid #0a8bc2;
+  background-color: #0a8bc2;
+  border: 1px solid #0979aa;
   -webkit-box-shadow: 10px 10px 11px -4px rgba(0, 0, 0, 0.29);
   -moz-box-shadow: 10px 10px 11px -4px rgba(0, 0, 0, 0.29);
   box-shadow: 10px 10px 11px -4px rgba(0, 0, 0, 0.29); }
@@ -151,7 +168,7 @@ div#slider {
     cursor: pointer; }
   .contact-form input, .contact-form textarea {
     width: 100%;
-    background-color: #086891;
+    background-color: #065779;
     border: 1px solid black;
     color: white; }
   .contact-form textarea {
@@ -183,7 +200,7 @@ footer {
   align-items: center;
   justify-content: center;
   margin-top: auto;
-  background-color: #0a8bc2;
+  background-color: #0979aa;
   padding: 1rem;
   text-align: center; }
   footer ul {
