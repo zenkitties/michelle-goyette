@@ -24,7 +24,7 @@ body {
   font: 16px Raleway, sans-serif, Arial, Helvetica; }
 
 body.site {
-  min-height: 100vh;
+  height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column; }
@@ -54,15 +54,25 @@ header {
     margin-bottom: 0; }
     header ul.navigation-menu #open-contact:hover {
       cursor: pointer; }
+    header ul.navigation-menu a {
+      font-weight: bold;
+      height: 100%; }
     header ul.navigation-menu li {
       display: inline-block;
-      padding: 10px 10px; }
+      padding: 10px 30px;
+      border-bottom: 5px solid transparent; }
+    header ul.navigation-menu li:hover {
+      border-bottom: 5px solid #3dbef5;
+      background: rgba(0, 0, 0, 0.6); }
+      header ul.navigation-menu li:hover a {
+        color: white; }
   header .brand-logo {
-    padding: 10px; }
+    padding: 10px;
+    font-weight: bold; }
 
 /* === Main Content === */
 .main-content {
-  background-color: rgba(9, 121, 170, 0.8);
+  background-color: rgba(9, 121, 170, 0.9);
   margin-top: 20px;
   color: #2e2e2e; }
   .main-content hr {
@@ -121,7 +131,7 @@ header {
 
 /* ======= Testomonials ============*/
 div.testimonials {
-  background-color: rgba(9, 121, 170, 0.8);
+  background-color: rgba(9, 121, 170, 0.9);
   color: #2e2e2e;
   padding: 20px 0;
   margin: 20px 0 100px 0; }
