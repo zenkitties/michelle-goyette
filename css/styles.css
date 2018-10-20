@@ -46,12 +46,14 @@ div.page-headings {
 header {
   min-height: 100%;
   background-color: #0a8bc2;
-  border-bottom: 1px solid #0979aa; }
+  border-bottom: 1px solid #0979aa;
+  z-index: 1000; }
   header ul.navigation-menu {
     display: block;
     text-align: right;
     text-transform: uppercase;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    z-index: 1000; }
     header ul.navigation-menu #open-contact:hover {
       cursor: pointer; }
     header ul.navigation-menu a {
@@ -221,7 +223,23 @@ footer {
 
 @media (max-width: 700px) {
   .main-content {
-    margin: 10px 0; }
+    margin: 30px 0 100px 0; }
+  /* Header Styles */
+  header {
+    height: 90px; }
+    header ul.navigation-menu {
+      min-height: 50px;
+      text-align: center;
+      font-size: 14px;
+      padding-right: 0; }
+      header ul.navigation-menu li {
+        padding: 10px 20px; }
+      header ul.navigation-menu li:hover {
+        background: none;
+        border-bottom: none; }
+    header .brand-logo {
+      text-align: center;
+      padding-right: 0; }
   /* Updates */
   .updates {
     -webkit-box-shadow: none;
@@ -230,7 +248,7 @@ footer {
   .contact-form {
     margin: 0 10px; }
   div.testimonials {
-    margin: 10px 10px 30px 10px; }
+    margin: -70px 10px 30px 10px; }
   /* Media Testimonials */
   div#slider {
     height: 350px;
