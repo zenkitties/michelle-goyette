@@ -84,6 +84,11 @@ michelleApp.controller('testimonialController',['$scope',function($scope){
             id: '10',
             client: 'Val M.',
             comment: ['To those considering seeing Michelle, I highly recommend you do. Think about the people you miss before going, and don’t be afraid to bring your older children if they want to participate. Be open to whatever you may hear, and definitely record your session for review later on. She’s a wonderful person with an amazing gift that I hope will bring peace, piece of mind, and reassurance to others.']
+        },
+        {
+            id: '11',
+            client: 'Rachel Hodson',
+            comment: ['I was very happy with my reading with Michelle. She connected with my mother, and correctly interpreted her energy, as well as the circumstances surrounding her illness and death. Michelle also was able to tell me things about my own life that no one else could know. These things brought me great comfort, and validated my life path. I feel more confident about the direction I am going, and very positive about life in general as a result. I will definitely consult Michelle again in the future, and recommend her highly to anyone who is looking for closure and validation.']
         }
     ]
 }]);
